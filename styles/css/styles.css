@@ -43,6 +43,7 @@ a{
 }
 /* Menu */
 .menu{
+    position: fixed;
     width: 95%;
     margin-inline:auto;
     display: flex;
