@@ -1,4 +1,4 @@
-import {urls} from 'js/modules/urls.js'
+import { urls } from '/js/modules/urls.js'
 
 window.addEventListener('DOMContentLoaded',()=>{
     const peticiones = urls.map(peticion=>fetch(peticion));
