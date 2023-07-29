@@ -167,6 +167,24 @@ a{
     background-color: transparent;
     color: white;
 }
+
+.imagotipo-descripcion{
+    flex: 1;
+    width: 95%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    color: white;
+}
+#gris{
+    color: dimgray;
+}
+#parrafo-arriba{
+    display: inline;
+}
 /* footer */
 .footer{
     padding-top: 20px;
