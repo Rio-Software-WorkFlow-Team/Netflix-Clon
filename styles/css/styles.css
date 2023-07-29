@@ -169,21 +169,12 @@ a{
 }
 
 .imagotipo-descripcion{
-    flex: 1;
-    width: 95%;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 15px;
+    height: 180px;
+    width: 700px;
     color: white;
 }
 #gris{
     color: dimgray;
-}
-#parrafo-arriba{
-    display: inline;
 }
 /* footer */
 .footer{
