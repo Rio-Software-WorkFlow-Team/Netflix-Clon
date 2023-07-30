@@ -193,6 +193,14 @@ a{
     width: 30px;
     height: 30px;
 }
+#code-Service {
+    width: 7.5rem;
+    background-color: #0b0b0bb3;
+    border: px solid #fff;
+}
+#code-Service p {
+    color: #6d6464;
+}
 
 .informacion{
     display: grid;
@@ -219,17 +227,17 @@ a{
 .informacion p:hover{
     color: white;
 }
-.idioma{
+.version{
     color: white;
-    padding: 8px;
-    font-weight: 700;
+    padding: 4px;
+    font-size: 1rem;
 }
-.contruccion{
+/* .contruccion{
     color: white;
     padding: 10px;
     font-weight: 900;
     text-align: center;
-}
+} */
 .catalogos{
     padding-block: 2px;
     background-color: black;
