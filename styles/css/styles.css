@@ -52,6 +52,10 @@ a{
     gap: 5px;
     font-size: 15px;
 }
+nav.scroll {
+    background-color: #000000; /* Cambia el color de fondo cuando se hace scroll */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra en el scroll */
+  }
 .navegacion{
     padding-top: 10px;
     display: flex;
