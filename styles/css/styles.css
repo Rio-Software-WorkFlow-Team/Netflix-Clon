@@ -43,8 +43,8 @@ a{
 }
 /* Menu */
 .menu{
-    position: fixed;
-    width: 95%;
+
+    width: 100%;
     margin-inline:auto;
     display: flex;
     align-items: center;
@@ -52,9 +52,22 @@ a{
     gap: 5px;
     font-size: 15px;
 }
-nav.scroll {
+.prueba{ 
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 15px;
+    
+}
+nav.normal.scroll {
+    width: 100%;
+    position: fixed;
     background-color: #000000; /* Cambia el color de fondo cuando se hace scroll */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra en el scroll */
+  }
+  nav.normal {
+    width: 100%;
+    position: fixed; 
   }
 .navegacion{
     padding-top: 10px;
@@ -62,6 +75,11 @@ nav.scroll {
     align-items: center;
     gap: 5px;
     font-size: 15px;
+    justify-content: space-between;
+    float: left;
+}
+.navegacion--derecha{
+    float: right;
 }
 @media (min-width:400px) {
     .navegacion{
