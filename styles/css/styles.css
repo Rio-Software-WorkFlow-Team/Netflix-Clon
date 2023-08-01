@@ -276,3 +276,7 @@ nav.normal.scroll {
     min-width: 200px;
     height: auto;
 }
+span{
+    background-color: #000000;
+    color: white;
+}
