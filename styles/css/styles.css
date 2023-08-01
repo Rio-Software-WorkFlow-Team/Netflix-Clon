@@ -42,33 +42,22 @@ a{
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%,rgba(0, 0, 0, .9) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%);
 }
 /* Menu */
-.menu{
-
-    width: 100%;
-    margin-inline:auto;
+.menu{ 
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 5px;
     font-size: 15px;
 }
-.prueba{ 
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    font-size: 15px;
-    
+nav.normal {
+    width: 100%;
+    position: fixed; 
 }
 nav.normal.scroll {
     width: 100%;
     position: fixed;
     background-color: #000000; /* Cambia el color de fondo cuando se hace scroll */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra en el scroll */
-  }
-  nav.normal {
-    width: 100%;
-    position: fixed; 
-  }
+}
 .navegacion{
     padding-top: 10px;
     display: flex;
