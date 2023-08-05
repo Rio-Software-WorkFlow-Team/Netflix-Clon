@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de inicio — Netflix</title>
-    <link rel="shortcut icon" href="assets/img/netflix favicon.png" type="image/x-icon">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de inicio — Netflix</title>
+        <link rel="shortcut icon" href="assets/img/netflix favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/css/normalize.css">
     <link rel="stylesheet" href="styles/css/styles.css">
 </head>
@@ -53,9 +53,9 @@
                     <br>
                     <p>Seis adolescentes llegan a un innovador campamento en Isla Nublar con ansias de aventuras. Pero,
                         cuando los dinosaurios escapan, solo el trabajo en equipo los salvará.</p>
-                    <br>
-                    <p id="gris">Protagonistas: Paul-Mikél Williams, Jenna Ortega, Sean Giambrone</p>
-                </div>
+                        <br>
+                        <p id="gris">Protagonistas: Paul-Mikél Williams, Jenna Ortega, Sean Giambrone</p>
+                    </div>
                 <br>
                 <div class="imagotipo--info">
                     <p>▶ Reproduccir</p>
@@ -65,22 +65,27 @@
         </div>
     </aside>
     <main class="catalogos">
-        <section class="catalogo--peliculas">
+
+        <div id="data-container">
+
+        </div>
+  
+        <section id="peliculas-populares" class="catalogo--peliculas">
             <h1>Películas Populares</h1>
             <div class="peliculas" id="populares">
-
+                
             </div>
         </section>
         <section class="catalogo--peliculas">
             <h2>Películas de Estreno</h2>
             <div class="peliculas" id="estreno">
-
+                
             </div>
         </section>
         <section class="catalogo--peliculas">
             <h2>Películas más vistas</h2>
             <div class="peliculas" id="vistas">
-
+                
             </div>
         </section>
     </main>
@@ -115,7 +120,8 @@
     </footer>
     <script src="js/index.js" type="module"></script>
     <script src="js/menu.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
 </body>
 
 </html>
