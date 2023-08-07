@@ -378,9 +378,10 @@ nav.normal.scroll {
     border:rgb(133, 133, 133) solid;
     border-width: thin;
     margin: 25px;
-    margin-right: 1100px;
+    margin-right: 900px;
     padding: 5px;
-    padding-left: 10px;
+    padding-left: 20px;
+    margin-left: 200px ;
 
 }
 .version {
