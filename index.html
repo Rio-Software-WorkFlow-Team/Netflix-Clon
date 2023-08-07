@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clon de Netflix</title>
-    <link rel="shortcut icon" href="assets\img\netflix.png" type="image/x-icon">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de inicio — Netflix</title>
+        <link rel="shortcut icon" href="assets/img/netflix favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/css/normalize.css">
     <link rel="stylesheet" href="styles/css/styles.css">
 </head>
+
 <body>
     <aside class="background--banner">
         <video muted autoplay loop poster="assets/img/background-image.webp">
@@ -17,7 +19,8 @@
         </video>
         <div class="banner">
             <div class="menu">
-                <nav>
+                <nav class="normal" class="scroll">
+
                     <ul class="navegacion navegacion--izquierda">
                         <li class="logo"><a href="#"><img src="assets/img/netflix.png" alt="Netflix"></a></li>
                         <li><a href="#">Explorar ⏷</a></li>
@@ -27,15 +30,16 @@
                         <li><a href="#">Novedades Populares</a></li>
                         <li><a href="#">Mi Lista</a></li>
                     </ul>
-                </nav>
-                <nav>
                     <ul class="navegacion navegacion--derecha">
                         <li><a href="#"><img src="assets/img/lupa.svg" alt="Lupa"></a></li>
-                        <li><a href="#">Niños</a></li>
-                        <li><a href="#">DVD</a></li>
-                        <li><a href="#"><img src="Multimedia/campana.png" alt="Campana"></a></li>
-                        <li class="usuario"><a href="#"><img src="Multimedia/user.png" alt="Usuario"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"><img src="assets/img/campana.png" alt="Campana"></a></li>
+                        <li><a href="#"></a></li>
+                        <li class="usuario"><a href="#"><img src="assets/img/Netflix-avatar.png" alt="Usuario"></a></li>
+                        <li><a href="#"> ⏷</a></li>
                     </ul>
+                    
                 </nav>
             </div>
             <div class="imagotipo">
@@ -47,10 +51,11 @@
                     <br>
                     <p id="gris">2020 | Clasificación por edad:10+ | 5 temporadas | Kids</p>
                     <br>
-                    <p>Seis adolescentes llegan a un innovador campamento en Isla Nublar con ansias de aventuras. Pero, cuando los dinosaurios escapan, solo el trabajo en equipo los salvará.</p>
-                    <br>
-                    <p id="gris">Protagonistas: Paul-Mikél Williams, Jenna Ortega, Sean Giambrone</p>
-                </div>
+                    <p>Seis adolescentes llegan a un innovador campamento en Isla Nublar con ansias de aventuras. Pero,
+                        cuando los dinosaurios escapan, solo el trabajo en equipo los salvará.</p>
+                        <br>
+                        <p id="gris">Protagonistas: Paul-Mikél Williams, Jenna Ortega, Sean Giambrone</p>
+                    </div>
                 <br>
                 <div class="imagotipo--info">
                     <p>▶ Reproduccir</p>
@@ -60,10 +65,15 @@
         </div>
     </aside>
     <main class="catalogos">
-        <section class="catalogo--peliculas">
+
+        <div id="data-container">
+
+        </div>
+  
+        <section id="peliculas-populares" class="catalogo--peliculas">
             <h1>Películas Populares</h1>
             <div class="peliculas" id="populares">
-
+                
             </div>
         </section>
         <section class="catalogo--peliculas">
@@ -82,32 +92,36 @@
     <footer class="footer">
         <div class="footer--contenedor">
             <ul class="iconos">
-                <li><a href="#"><img src="assets/img/facebook.png" alt="facebook"></a></li>
-                <li><a href="#"><img src="assets/img/instagram.png" alt="instagram"></a></li>
-                <li><a href="#"><img src="assets/img/gorjeo.png" alt="twitter"></a></li>
-                <li><a href="#"><img src="assets/img/youtube.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="assets/img/face.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="assets/img/insta.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="assets/img/twi.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="assets/img/you.png" alt="youtube"></a></li>
             </ul>
             <div class="informacion">
-                <p>Audios y subtitulos</p>
-                <p>Centro de ayuda</p>
+                <p>Preguntas frecuentes</p>
                 <p>Prensa</p>
-                <p>Empleo</p>
-                <p>Privacidad</p>
-                <p>Preferencia de cookies</p>
-                <p>Contáctos</p>
-                <p>Audio descriptivo</p>
-                <p>Tarjetas de regalo</p>
+                <p>Formas de ver</p>
+                <p>Preferencias de cookies</p>
+                <p>Pruebas de velocidad</p>
+                <p>Centro de ayuda</p>
                 <p>Relaciones con inversionistas</p>
                 <p>Terminos de uso</p>
-                <p>Avisos legales</p>
-                <p>Información corporativa</p>
+                <p>Informacion corporativa</p>
+                <p>Cuenta</p>
+                <p>Empleo</p>
+                <p>Privacidad</p>
+                <p>Contactanos</p>
+                <p>Solo en netflix</p>
             </div>
-
-            <button id="code-Service"><p>Código de Servicio</p></button>
-            <p class="version"> &copy; 1997-2022 Netflix.Inc</p>
-            
+            <p class="idioma">🌎︎ Español</p>
+            <p class="contruccion">@capidev 2023</p>
         </div>
+        <span>© 1997-2023 Netflix, Inc.</span>
     </footer>
     <script src="js/index.js" type="module"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
 </body>
+
 </html>
