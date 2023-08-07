@@ -229,6 +229,7 @@ nav.normal.scroll {
 .titlo-iconos button:hover {
     color: #FFFF;
     border: 1px solid #ffff;
+    cursor: pointer;
 }
 
 /* imagotipo */
