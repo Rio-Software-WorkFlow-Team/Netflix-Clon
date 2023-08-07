@@ -1,79 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
     font-family: 'Roboto', sans-serif;
 }
-
-video {
+video{
     width: 100%;
     height: 100vh;
     object-fit: cover;
     position: absolute;
 }
-
-img {
+img{
     object-fit: cover;
     width: 100%;
     height: 100%;
     display: block;
 }
-
-ul {
+ul{
     list-style: none;
     padding-left: 0;
 }
-
-a {
+a{
     text-decoration: none;
     color: white;
 }
-
 /* Banner */
-.background--banner {
+.background--banner{
     height: 100vh;
     width: 100%;
     overflow: hidden;
 }
-
-.banner {
+.banner{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: absolute;
-    background-color: #141414;
-    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, .9) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%);
+    background-color: black;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%,rgba(0, 0, 0, .9) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%);
 }
-
 /* Menu */
-.menu {
+.menu{ 
     display: flex;
     justify-content: space-between;
     gap: 5px;
     font-size: 15px;
 }
-
 nav.normal {
     width: 100%;
-    position: fixed;
+    position: fixed; 
 }
-
 nav.normal.scroll {
     width: 100%;
     position: fixed;
-    background-color: #141414;
-    /* Cambia el color de fondo cuando se hace scroll */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Añade una sombra en el scroll */
+    background-color: #000000; /* Cambia el color de fondo cuando se hace scroll */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra en el scroll */
 }
-
-.navegacion {
-    padding-top: .15rem;
-    padding-left: 3rem;
+.navegacion{
+    padding-top: 10px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -81,96 +67,78 @@ nav.normal.scroll {
     justify-content: space-between;
     float: left;
 }
-
-.navegacion--derecha {
+.navegacion--derecha{
     float: right;
-    padding-top: 1rem;
-    padding-right: 2.5rem;
-    color: white;
 }
-
 @media (min-width:400px) {
-    .navegacion {
-        gap: 1.5rem;
+    .navegacion{
+        gap: 15px;
     }
 }
-
 /* Menu izquierda */
-.logo {
+.logo{
     width: 90px;
     height: 40px;
 }
-
 @media (min-width:768px) {
-    .logo {
+    .logo{
         width: 110px;
         height: 60px;
     }
 }
-
 @media (min-width:992px) {
-    .navegacion--izquierda li:nth-child(2) {
+    .navegacion--izquierda li:nth-child(2){
         display: none;
     }
 }
-
 .navegacion--izquierda li:nth-child(3),
 .navegacion--izquierda li:nth-child(4),
 .navegacion--izquierda li:nth-child(5),
 .navegacion--izquierda li:nth-child(6),
-.navegacion--izquierda li:nth-child(7) {
+.navegacion--izquierda li:nth-child(7){
     display: none;
 }
-
 @media (min-width:992px) {
-
     .navegacion--izquierda li:nth-child(3),
     .navegacion--izquierda li:nth-child(4),
     .navegacion--izquierda li:nth-child(5),
     .navegacion--izquierda li:nth-child(6),
-    .navegacion--izquierda li:nth-child(7) {
+    .navegacion--izquierda li:nth-child(7){
         display: flex;
     }
 }
-
 /* Menu derecha */
-.navegacion--derecha li:nth-child(1) {
+.navegacion--derecha li:nth-child(1),
+.navegacion--derecha li:nth-child(4)
+{
     width: 25px;
 }
-
-.usuario {
-    height: 2rem;
+.usuario{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
 }
-
-.usuario img {
-    border-radius: .4rem;
-}
-
 .navegacion--derecha li:nth-child(1),
 .navegacion--derecha li:nth-child(2),
 .navegacion--derecha li:nth-child(3),
-.navegacion--derecha li:nth-child(4) {
+.navegacion--derecha li:nth-child(4){
     display: none;
 }
-
 @media (min-width:330px) {
-
     .navegacion--derecha li:nth-child(1),
-    .navegacion--derecha li:nth-child(4) {
+    .navegacion--derecha li:nth-child(4){
         display: flex;
     }
 }
-
 @media (min-width:992px) {
-
     .navegacion--derecha li:nth-child(2),
-    .navegacion--derecha li:nth-child(3) {
+    .navegacion--derecha li:nth-child(3){
         display: flex;
     }
 }
-
 /* imagotipo */
-.imagotipo {
+.imagotipo{
     flex: 1;
     width: 95%;
     margin-inline: auto;
@@ -180,180 +148,137 @@ nav.normal.scroll {
     align-items: start;
     gap: 15px;
 }
-
-.imagotipo--imagen {
+.imagotipo--imagen{
     min-width: 500px;
 }
-
-.imagotipo--info {
+.imagotipo--info{
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
-.imagotipo--info p {
+.imagotipo--info p{
     border-radius: .5rem;
     font-size: 20px;
     font-weight: 700;
     padding: .8rem 1.2rem;
 }
-
-.imagotipo--info p:nth-child(1) {
+.imagotipo--info p:nth-child(1){
     border: 1px solid white;
     background-color: white;
     cursor: pointer;
 }
-
-.imagotipo--info p:nth-child(2) {
+.imagotipo--info p:nth-child(2){
     border: 1px solid #6d6d63b3;
     background-color: #6d6d63b3;
     cursor: pointer;
     color: white;
 }
-
 .imagotipo--info p:nth-child(1):hover,
-.imagotipo--info p:nth-child(2):hover {
+.imagotipo--info p:nth-child(2):hover{
     background-color: transparent;
     color: white;
 }
 
-.imagotipo-descripcion {
+.imagotipo-descripcion{
     height: 135px;
     width: 700px;
     color: white;
 }
-
-#gris {
+#gris{
     color: dimgray;
 }
-
 /* footer */
-.footer {
-    padding-top: 7rem;
-    background-color: #141414;
+.footer{
+    padding-top: 20px;
+    background-color: black;
 }
-
-.footer--contenedor {
+.footer--contenedor{
     width: 95%;
-    margin-inline: auto;
+    margin-inline:auto;
 }
-
-.footer span {
-    color: rgba(133, 133, 133, 0.4);
-    padding-left: 2rem;
-    margin-left: 10.2rem;
-}
-
-.iconos {
+.iconos{
     display: flex;
     gap: 20px;
-    margin-left: 9rem;
 }
-
-.iconos li {
+.iconos li{
     width: 30px;
     height: 30px;
 }
-
 #code-Service {
     width: 7.5rem;
     background-color: #0b0b0bb3;
     border: px solid #fff;
 }
-
 #code-Service p {
     color: #6d6464;
 }
 
-.informacion {
+.informacion{
     display: grid;
     color: rgb(133, 133, 133);
     gap: 20px;
-    margin-block: 20px;
+    margin-block:20px;
     font-size: 15px;
-    margin-left: 9.5rem;
 }
-
-.informacion button {
-    width: 7.5rem;
-    padding-top: 4px;
-    padding-left: 1.9px;
-    padding-bottom: 4px;
-    background: rgba(133, 133, 133, 0.0);
-    border: .7px solid rgba(133, 133, 133, 0.6);
-}
-
-.informacion button p {
-    color: rgba(133, 133, 133, 0.8);
-}
-
 @media (min-width:400px) {
-    .informacion {
+    .informacion{
         grid-template-columns: 1fr 1fr;
     }
 }
-
 @media (min-width:768px) {
-    .informacion {
+    .informacion{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
 @media (min-width:992px) {
-    .informacion {
+    .informacion{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-
-.informacion p:hover {
+.informacion p:hover{
     color: white;
 }
-
-.version {
+.version{
     color: white;
     padding: 4px;
     font-size: 1rem;
 }
-
 /* .contruccion{
     color: white;
     padding: 10px;
     font-weight: 900;
     text-align: center;
 } */
-.catalogos {
+.catalogos{
     padding-block: 2px;
-    background-color: #141414;
+    background-color: black;
     color: white;
 }
-
-.catalogo--peliculas {
-    width: 95%;
+.catalogo--peliculas{
+    width: 100%;
     margin-inline: auto;
+    
 }
-
 .catalogo--peliculas h1,
-.catalogo--peliculas h2 {
+.catalogo--peliculas h2{
     padding: 10px;
 }
 
-.peliculas {
+.peliculas{
     overflow-x: scroll;
     display: flex;
-    gap: .8rem;
+    gap: 12px;
 }
-
-.peliculas::-webkit-scrollbar {
+.peliculas::-webkit-scrollbar{
     width: 0;
     height: 0;
 }
-
-.pelicula {
+.pelicula{
     min-width: 200px;
     height: auto;
 }
-
-span {
+span{
+    background-color: #000000;
     color: white;
 }
 
@@ -363,27 +288,22 @@ span {
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
-    /* padding: 10px; */
-    /* margin: 10px; */
-    /* width: 300px; */
-    width: 10rem;
-    height: 10rem;
-}
-
-.card img {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+  }
+  
+  .card img {
     width: 100%;
-    /* max-height: 200px; */
+    max-height: 200px;
     object-fit: cover;
-}
-
-.card h3 {
+  }
+  
+  .card h3 {
     margin-top: 0;
-}
-
-.card p {
+  }
+  
+  .card p {
     margin-bottom: 0;
-}
-
-.card:hover {
-    transform: scale(1.2);
-}
+  }
+  
