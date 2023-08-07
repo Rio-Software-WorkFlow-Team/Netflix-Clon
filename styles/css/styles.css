@@ -340,7 +340,7 @@ nav.normal.scroll {
 .peliculas {
     overflow-x: scroll;
     display: flex;
-    gap: 12px;
+    gap: .8rem;
 }
 
 .peliculas::-webkit-scrollbar {
@@ -382,4 +382,8 @@ span {
 
 .card p {
     margin-bottom: 0;
+}
+
+.card:hover {
+    transform: scale(1.2);
 }
