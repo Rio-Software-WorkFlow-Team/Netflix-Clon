@@ -304,7 +304,7 @@ nav.normal.scroll {
 .footer span {
     color: rgba(133, 133, 133, 0.4);
     padding-left: 2rem;
-    margin-left: 10.2rem;
+    margin-left: 7.3rem;
 }
 
 .iconos {
@@ -378,10 +378,11 @@ nav.normal.scroll {
     border:rgb(133, 133, 133) solid;
     border-width: thin;
     margin: 25px;
-    margin-right: 900px;
-    padding: 5px;
-    padding-left: 20px;
-    margin-left: 200px ;
+    width: 8.6rem;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 1px;
+    margin-left: 9.4rem;
 }
 #codigo p:hover {
     color: white;
