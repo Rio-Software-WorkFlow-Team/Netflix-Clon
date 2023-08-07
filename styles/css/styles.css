@@ -382,7 +382,9 @@ nav.normal.scroll {
     padding: 5px;
     padding-left: 20px;
     margin-left: 200px ;
-
+}
+#codigo p:hover {
+    color: white;
 }
 .version {
     color: white;
