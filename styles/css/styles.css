@@ -60,6 +60,7 @@ a {
 nav.normal {
     width: 100%;
     position: fixed;
+    transition: background-color .3s;
 }
 
 nav.normal.scroll {
@@ -118,7 +119,9 @@ nav.normal.scroll {
 .navegacion--izquierda li:nth-child(4),
 .navegacion--izquierda li:nth-child(5),
 .navegacion--izquierda li:nth-child(6),
-.navegacion--izquierda li:nth-child(7) {
+.navegacion--izquierda li:nth-child(7),
+.navegacion--izquierda li:nth-child(8)
+ {
     display: none;
 }
 
@@ -149,7 +152,8 @@ nav.normal.scroll {
 .navegacion--derecha li:nth-child(1),
 .navegacion--derecha li:nth-child(2),
 .navegacion--derecha li:nth-child(3),
-.navegacion--derecha li:nth-child(4) {
+.navegacion--derecha li:nth-child(4)
+ {
     display: none;
 }
 
@@ -167,6 +171,64 @@ nav.normal.scroll {
     .navegacion--derecha li:nth-child(3) {
         display: flex;
     }
+}
+
+.titulo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+
+.subScroll {
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.titulo-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.titulo-seccion .generos {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #ffff;
+    padding: .2rem 1.1rem;
+    background-color: #141414;
+    transition: background-color .3s;
+}
+
+.titulo-seccion .generos:hover {
+    background-color: transparent;
+}
+
+.titulo-seccion h2 {
+    color: #fff;
+    font-size: xx-large;
+}
+
+.titlo-iconos {
+    display: flex;
+}
+
+.titlo-iconos button {
+    background-color: transparent;
+    color: #ccccccd7;
+    padding: 0rem .4rem;
+    border: 1px solid #ccccccd7;
+    transform: scale(0.9);
+    transition: all .3s;
+}
+
+.titlo-iconos button:hover {
+    color: #FFFF;
+    border: 1px solid #ffff;
 }
 
 /* imagotipo */
