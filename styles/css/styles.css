@@ -189,16 +189,23 @@ nav.normal.scroll {
 }
 /* footer */
 .footer{
-    padding-top: 20px;
+    padding-top: 7rem;
     background-color: black;
 }
 .footer--contenedor{
     width: 95%;
     margin-inline:auto;
 }
+
+.footer span {
+   color: rgba(133, 133, 133, 0.4);
+   padding-left: 2rem;
+   margin-left: 9.5rem;
+}
 .iconos{
     display: flex;
     gap: 20px;
+    margin-left: 9rem;
 }
 .iconos li{
     width: 30px;
@@ -219,7 +226,22 @@ nav.normal.scroll {
     gap: 20px;
     margin-block:20px;
     font-size: 15px;
+    margin-left: 9.5rem;
 }
+
+.informacion button {
+    width: 7.5rem;
+    padding-top: 4px;
+    padding-left: 1.9px;
+    padding-bottom: 4px;
+    background: rgba(133, 133, 133, 0.0);
+    border: .7px solid rgba(133, 133, 133, 0.6);
+}
+
+.informacion button p {
+    color: rgba(133, 133, 133, 0.8);
+}
+
 @media (min-width:400px) {
     .informacion{
         grid-template-columns: 1fr 1fr;
