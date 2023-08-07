@@ -13,10 +13,10 @@ const loadData = async (containerId) => {
         const image = pelicula.primaryImage?.url || "/assets/img/imagen_default.png";
         const releaseYear = pelicula.releaseYear?.year || "Año de lanzamiento desconocido";
   
+        // <h3>${title}</h3>
+        // <p>Año de lanzamiento: ${releaseYear}</p>
         card.innerHTML = `
-          <h3>${title}</h3>
           <img src="${image}" alt="${title}" />
-          <p>Año de lanzamiento: ${releaseYear}</p>
         `;
   
         dataContainer.appendChild(card);
