@@ -363,14 +363,16 @@ span {
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    /* width: 300px; */
+    width: 10rem;
+    height: 10rem;
 }
 
 .card img {
     width: 100%;
-    max-height: 200px;
+    /* max-height: 200px; */
     object-fit: cover;
 }
 
