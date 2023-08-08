@@ -195,8 +195,15 @@ nav.normal.scroll {
     gap: 3rem;
 }
 
+@media screen and (max-width:700px) {
+    .titulo-container{
+        display: none;
+    }
+}
+
 .titulo-seccion .generos {
     display: flex;
+    position: relative;
     gap: 1rem;
     border: 1px solid #ffff;
     padding: .2rem 1.1rem;
@@ -206,6 +213,35 @@ nav.normal.scroll {
 
 .titulo-seccion .generos:hover {
     background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid #cccccca4;
+    position: absolute;
+    width: 33rem;
+    top: 1.5rem;
+    left: 0;
+    color: #FFFF;
+}
+
+.dropdown-menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5em;
+    place-items: left;
+    padding: .5em;
+}
+
+.dropdown-menu-list-item {
+    overflow: hidden;
+    display: flex;
+}
+
+.show {
+    display: block;
 }
 
 .titulo-seccion h2 {
@@ -434,44 +470,103 @@ span{
     color: rgb(133, 133, 133);
 }
 
+  /* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
 
-/* ------------------------------------------------------------------------------ */
-/* estos estilos son provisionales se pueden borrar o modificar a su antojo :D */
-.card {
-    /* border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    width: 10rem;
-    height: 10rem; */
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
 
-    /* position: relative; */
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+    position: relative;
     overflow: hidden;
     width: 22rem;
     height: 150px; 
-    /* z-index: 1; */
+    z-index: 1;
 }
 
-.card img {
-    width: 10;
-    height: 100%;
-    transition: transform 0.3s ease;
-    /* z-index: -10; */
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
 }
 
-.card h3 {
-    margin-top: 0;
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
 }
 
-.card p {
-    margin-bottom: 0;
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
 }
 
-.card:hover {
-    transform: scale(1.7);
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+    height: 150px;
+	vertical-align: top;
+    border-radius: .3rem;
+    padding-right: .1rem;
 }
 
-.card img:hover {
-    border-radius: 8px;
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
 }
+  
