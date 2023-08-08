@@ -7,11 +7,4 @@ const options = {
   }
 };
 
-// try {
-// 	const response = await axios.request(options);
-// 	console.log(response.data.results);
-// } catch (error) {
-// 	console.error(error);
-// }
-
 export { options }
