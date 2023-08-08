@@ -195,8 +195,15 @@ nav.normal.scroll {
     gap: 3rem;
 }
 
+@media screen and (max-width:700px) {
+    .titulo-container{
+        display: none;
+    }
+}
+
 .titulo-seccion .generos {
     display: flex;
+    position: relative;
     gap: 1rem;
     border: 1px solid #ffff;
     padding: .2rem 1.1rem;
@@ -206,6 +213,35 @@ nav.normal.scroll {
 
 .titulo-seccion .generos:hover {
     background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid #cccccca4;
+    position: absolute;
+    width: 33rem;
+    top: 1.5rem;
+    left: 0;
+    color: #FFFF;
+}
+
+.dropdown-menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5em;
+    place-items: left;
+    padding: .5em;
+}
+
+.dropdown-menu-list-item {
+    overflow: hidden;
+    display: flex;
+}
+
+.show {
+    display: block;
 }
 
 .titulo-seccion h2 {
