@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu;
 }
 
 video {
@@ -241,7 +241,7 @@ nav.normal.scroll {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 15px;
+    gap: 1px;
 }
 
 .imagotipo--imagen {
@@ -446,17 +446,18 @@ span{
     width: 10rem;
     height: 10rem; */
 
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     width: 22rem;
     height: 150px; 
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .card img {
-    width: 100%;
+    width: 10;
     height: 100%;
     transition: transform 0.3s ease;
+    /* z-index: -10; */
 }
 
 .card h3 {
