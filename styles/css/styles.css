@@ -70,6 +70,7 @@ nav.normal.scroll {
     /* Cambia el color de fondo cuando se hace scroll */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     /* Añade una sombra en el scroll */
+    z-index: 9999;
 }
 
 .navegacion {
@@ -327,6 +328,19 @@ nav.normal.scroll {
     font-size: 1.2rem;
 }
 
+@media (max-width:700px) {
+
+    .imagotipo--imagen {
+        min-width: 100%;
+    }
+
+    .imagotipo-descripcion {
+        height: auto;
+        width: 80%;
+        padding-bottom: 1rem;
+    }
+}
+
 #gris {
     color: dimgray;
 }
@@ -376,6 +390,16 @@ nav.normal.scroll {
     margin-block: 20px;
     font-size: 15px;
     margin-left: 8.6rem;
+}
+
+@media (max-width:700px) {
+    .iconos{
+        margin-left: 4rem;
+    }
+    .informacion {
+        margin-left: .6rem;
+        justify-content: center;
+    }
 }
 
 .informacion button {
@@ -613,4 +637,52 @@ span{
 	.peliculas-recomendadas .flecha-derecha {
 		display: none;
 	}
+}
+
+.subcard-container {
+    display: none;
+    flex-direction: column;
+}
+
+.reaciones {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.reaciones .drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6d646425;
+    border: 1px solid #6d6464;
+    border-radius: 1rem;
+}
+
+.duracion {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    padding-left: 1rem;
+}
+
+.duracion .para-ti {
+    color:rgba(0, 255, 0, 0.824)
+}
+
+.duracion .edades, .duracion .calidad {
+    border: 1px solid #CCCC;
+    padding: .1rem;
+}
+
+.generos ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: small;
+    padding: .5rem 1rem;
+}
+
+.contenedor-carousel .carousel .pelicula:hover .subcard-container {
+    display: flex;
 }
