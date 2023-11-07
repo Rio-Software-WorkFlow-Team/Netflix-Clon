@@ -1,3 +1,5 @@
+// Januar Andres Asprilla Valoyes 
+
 window.addEventListener("scroll", function () {
   const nav = document.querySelector("nav");
   const subNav = document.querySelector("#subNav");
