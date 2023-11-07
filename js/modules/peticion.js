@@ -36,6 +36,7 @@ const loadData = async (containerId) => {
   try {
     const response = await axios.request(options);
     const dataContainer = document.getElementById(containerId);
+    console.log(response.data)
 
     response.data.results.forEach((pelicula) => {
       const card = document.createElement("div");
